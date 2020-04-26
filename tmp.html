@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application d'aide à la lutte contre le covid-19</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/23901b587234268703d8144cb9d1cef3?family=GalanoClassicW00-Bold" rel="stylesheet" type="text/css"/>
 
     <style>
+        /*color1: #CBC600*/
+        /*color2: #940051*/
+        /*color2: #007190*/
         * {
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
-            font-family: 'Baloo Tamma 2', cursive;
+            font-family: "GalanoClassicW00-Bold", sans-serif;
         }
 
-        body {
-            padding: 20px;
-            margin: 0;
-            box-sizing: border-box;
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        main {
+            margin-left: 5vw;
         }
 
         .app {
@@ -25,50 +31,137 @@
         }
 
         .list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: center;
+            width: 100%;
         }
 
         h1 {
             padding: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+            color: #002E3E;
         }
 
         a {
             text-decoration: none;
-            color: #777777;
+            color: #007190;
         }
 
+        p {
+            padding: 16px 0;
+            text-align: justify;
+        }
+
+        .band-1 {
+            background-color: #CBC600;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 5vw;
+            height: 30vh;
+            z-index: 10;
+        }
+
+        .band-2 {
+            background-color: #940051;
+            position: fixed;
+            left: 0;
+            top: 30vh;
+            width: 5vw;
+            height: 70vh;
+            z-index: 10;
+        }
+
+        header {
+            text-align: center;
+            padding: 16px;
+            position: sticky;
+            background-color: #ffffff;
+            top: 0px;
+            left: 0px;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            background-color: #002E3E;
+            padding: 16px;
+        }
+
+        footer p {
+            padding: 2px;
+            font-weight: 100;
+            text-align: center;
+            color: white;
+        }
+
+        .primary {
+            color: #CBC600;
+        }
+        
+        @media screen and (max-width: 900px) {
+            .list {
+                grid-template-columns: auto;
+            }
+        }
     </style>
 
 </head>
 <body>
     
-    <h1>Liste d'application d'aide à la lutte contre le covid-19</h1>
 
-    <div class="list">
-        <div class="app">
-            <h2><a href="https://app.bloquercovid19.com/symptom_covid19_store" target="blank">Symptôme COVID</a></h2>
-            <p>Une application permettant à toute personnes recentent des symptômes similaires à ceux du <strong>coronavirus</strong> d'adoper les mêmes actions effectué par les personne en observation dans une zone de quarantaine.</p>
+    <div class="band-1"></div>
+    <div class="band-2"></div>
+
+    <main>
+        <h1>Liste d'application d'aide à la lutte contre le covid-19</h1>
+        <header>
+            <img src="./logo_sing.png" class="logo" alt="Logo de la sing">
+        </header>
+        <div class="list">
+            <div class="app">
+                <h2><a href="https://bloquercovid19.com" target="blank">Auto Test covid-19</a></h2>
+                <p>Auto Test est une application e-santé qui permet à toutes personnes le souhaitant de déterminer s’il est porteur du virus COVID 19. Basé sur le test de l’OMS cet outil d’aide à la prise de décision vous permet de savoir s’il faut ou non contacter le 1410 afin de vous faire tester. Attention la remarque donnée en fin de test est une recommandation, « Auto Test » n’a pas vocation de remplacer un test réalisé par un médecin, il s’agit avant tout d’un outil d’information</p>
+            </div>
+
+            <div class="app">
+                <h2><a href="https://bloquercovid19.com" target="blank">Bloquercovid19</a></h2>
+                <p>Vous êtes à la recherche d’outils pratiques pour continuer votre activité en télétravail, vous former avec des cours en ligne ou même vous divertir ? Vous êtes à la bonne adresse.
+                    Lutter contre le contre cette épidémie c’est possible même à votre échelle, pour cela il vous suffit d’avoir les bons gestes, suivre les recommandations de sécurité et de rester informés.</p>
+            </div>
+
+            <div class="app">
+                <h2><a href="https://app.bloquercovid19.com/symptom_covid19_store" target="blank">Symptôme COVID</a></h2>
+                <p>Une application permettant à toutes personnes ressentant des symptômes similaires à ceux du <strong>coronavirus</strong> d'adopter les mêmes actions effectuées par les personnes en observation dans une zone de quarantaine.</p>
+            </div>
+    
+            <div class="app">
+                <h2><a href="http://54.38.190.167:20022" target="blank">CORE COVID19</a></h2>
+                <p>Cette application a été spécialement conçu pour le Centre Opérationnel de Riposte au Epidémies. Pour facilité le suivi des personnes en quarantainre pendant l'observation des différents symptômes du Covid-19. Cette application apparait également comme une solution de reporting et d'archivages des fiches de suivi journalier de chaque patient.</p>
+            </div>
+
+            <div class="app">
+                <h2><a href="https://bloquercovid19.com/impact" target="blank">Impact Covid-19</a></h2>
+                <p>Quel impact la crise du COVID-19 a-t-elle eu sur votre entreprise ?</p>
+            </div>
+
+            <div class="app">
+                <h2><a href="https://bloquercovid19.com/relance" target="blank">Relance après Covid-19</a></h2>
+                <p>Réflexion sur la relance après la crise du COVID-19</p>
+            </div>
         </div>
 
-        <div class="app">
-            <h2><a href="https://bloquercovid19.com" target="blank">Bloquercovid19</a></h2>
-            <p>Vous êtes à la recherche d’outils pratiques pour continuer votre activité en télétravail, vous former avec des cours en ligne ou même vous divertir ? Vous êtes à la bonne adresse.
-                Lutter contre le contre cette épidémie c’est possible même à votre échelle, pour cela il vous suffit d’avoir les bons gestes, suivre les recommandations de sécurité et de rester informés.</p>
-        </div>
-
-        <div class="app">
-            <h2><a href="http://54.38.190.167:20022" target="blank">SCOVID</a></h2>
-            <p>Cette application a été spécialement conçu pour le Centre Opérationnel de Riposte au Epidémies. Pour facilité le suivi des personnes en quarantainre pendant l'observation des différents symptômes du Covid-19. Cette application apparait également comme un solution de reporting et d'archivages des fiches de suivi journalier de chaque patient.</p>
-        </div>
-
-        <div class="app">
-            <h2><a href="https://bloquercovid19.com" target="blank">Auto Test covid-19</a></h2>
-            <p>Auto Test est une application e-santé qui permet à toutes personnes le souhaitant de déterminer s’il est porteur du virus COVID 19. Basé sur le test de l’OMS cet outil d’aide à la prise de décision vous permet de savoir s’il faut ou non contacter le 1410 afin de vous faire tester.
-            Attention la remarque donnée en fin de test est une recommandation, « Auto Test » n’a pas vocation de remplacer un test réalisé par un médecin, il s’agit avant tout d’un outil d’information</p>
-        </div>
-    </div>
-
+        <footer>
+            <p class="primary"><strong>SING SA</strong> Société Anonyme au capital de 50 000 000 FCFA </p>
+            <p>BP 2280, Rue Pecqueur Centre Ville, Libreville Gabon </p>
+            <p>Tel: +241 74 13 71 03 Email: contact@sing.ga</p>
+        </footer>
+    </main>
 </body>
 </html>
