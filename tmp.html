@@ -26,11 +26,28 @@
             /* iOS 4.1- */
         }
 
+        @font-face {
+            font-family: "Galano Classic Alt W00 Thin";
+            src: url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.eot");
+            /* IE9*/
+            src: url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.woff2") format("woff2"),
+                /* chrome、firefox */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.woff") format("woff"),
+                /* chrome、firefox */
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.ttf") format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url("font-thin/bee0a6bc61bb7ee89ec742e02fc0b298.svg#Galano Classic Alt W00 Thin") format("svg");
+            /* iOS 4.1- */
+        }
+
         * {
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
-            font-family: "Galano Classic Alt W00 Black", sans-serif;
+            font-family: "Galano Classic Alt W00 Thin", sans-serif;
+            font-weight: bold;
         }
 
         .logo {
@@ -58,11 +75,13 @@
             padding-bottom: 40px;
             text-align: center;
             color: #002E3E;
+            font-family: "Galano Classic Alt W00 Black";
         }
 
         a {
             text-decoration: none;
             color: #007190;
+            font-family: "Galano Classic Alt W00 Black";
         }
 
         p {
@@ -107,7 +126,7 @@
             align-items: center;
             margin-top: 80px;
             background-color: #002E3E;
-            padding: 16px;
+            padding: 20px;
         }
 
         footer p {
@@ -115,6 +134,8 @@
             font-weight: 100;
             text-align: center;
             color: white;
+            font-family: "Galano Classic Alt W00 Black";
+            font-size: 14px;
         }
 
         .primary {
